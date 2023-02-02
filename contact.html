@@ -19,26 +19,32 @@
                 <p>for any business inquiries, or questions, email me !</p>
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <form action="https://formsubmit.co/theacidica@gmail.com" method="POST">
+                    <form onsubmit="sendEmail(); reset(); return false;">
                         <p>
-                            <label for="name">Name*:</label>
-                            <input type="text" name="name" required>
+                            <input type="text" id="name" placeholder="Your Name" required> <br><br>
+                            <input type="email" id="email" placeholder="Your Email" required> <br><br>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                            <br><br>
+                            <button type="submit">Send</button>
                         </p>
-                        <p>
-                            <label for="email">Email*:</label>
-                            <input type="email" name="email" required>
-                        </p>
-                        <p>
-                            <label for="message">Message*:</label>
-                            <br> <br>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="i like u.... like really REALLY like u..."></textarea>
-                        </p>
-                        <button type="submit">Send</button>
-                        <input type="hidden" name="_subject" value="New submission!">
-                        <input type="hidden" name="_next" value="home.html">
                    </form>
-
                 </fieldset>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script>
+                    function sendEmail() {
+                        Email.send({
+                            SecureToken : "2c899174-9a58-42a8-a128-d71d08588a61",
+                            To : 'theacidica@gmail.com',
+                            From : document.getElementById("email").value,
+                            Subject : "Message For Zygote !",
+                            Body : "name: " + document.getElementById("name").value
+                                + "<br> email: " + document.getElementById("email").value
+                                + "<br> message: " + document.getElementById("message").value
+                        }).then(
+                        message => alert("Message Sent Successfully")
+                        ); 
+                    }
+                </script>
             </article>
             <center>
                 <h3 style="text-align: center; word-spacing: 30px;" class="back">
