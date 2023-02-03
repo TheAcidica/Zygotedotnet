@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="utf-8">
+        <meta name="author" content="Edward Roane">
+        <meta name="description" content="contact me! ">
+        <meta name="viewport content="width=device-width, initial-scale=1">
+        <title>Zygote About</title>
+        <link rel="icon" href="images/icon.png" type="image/x-icon">         
+        <link rel="stylesheet" href="main.css">
+        <script src="contact.js"></script>
+        <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("LM2pbG7dQUrSry5tn");
+        })();
+        </script>
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <hr class="boarder">
+        <h1 style="color: red; text-align: center;">CONTACT INFO </h1>
+            <h4><p style="text-decoration: none; color: yellow"> for business inquiries or questions, email me here!</p></h4> 
+            <hr class="boarder"> <br>
+            <input type="text" id="name" placeholder="Enter Name" required><br><br>
+            <input type="email" id="email" placeholder="Enter Email" required><br><br>
+            <textarea id="message" cols="50" rows="11" placeholder="Message" required></textarea><br><br>
+            <button onclick="sendMail()">Submit</button>
+        <center>
+            <h3 style="text-align: center; word-spacing: 30px;" class="back">
+                <a href="home.html" style="text-decoration: none; color: yellow;"> &les;--Back</a>
+            </h3> 
+        </center>
+        <hr class="boarder">
+        <br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>
