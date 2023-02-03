@@ -10,33 +10,49 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <header>
-            <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
 
-            <hr class="boarder">
-            <h1 style="color: red; text-align: center;">CONTACT </h1>
-            <article>
-                <p>for any business inquiries, or questions, email me !</p>
-                <fieldset>
-                    <legend>Contact Information</legend>
-                    <form action="mail.php" method="POST">
-                        <p>
-                            <input type="text" name="name" placeholder="Your Name" required> <br><br>
-                            <input type="email" name="email" placeholder="Your Email" required> <br><br>
-                            <input type="text" name="subject" placeholder="Email Subject" required> <br><br>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
-                            <br><br>
-                            <button type="submit" value="Send">Send</button>
-                        </p>
-                   </form>
-                </fieldset>
-            </article>
-            <center>
-                <h3 style="text-align: center; word-spacing: 30px;" class="back">
-                    <a href="home.html" style="text-decoration: none; color: yellow;"> &les;--Back</a>
-                </h3> 
-            </center>
-            <hr class="boarder">
-            <br><br><br><br><br><br><br><br><br><br><br>
-        </header>
+        <hr class="boarder">
+        <h1 style="color: red; text-align: center;">CONTACT </h1>
+            <div class="form">
+                <form method"post">
+                    <input type="text" placeholder="Name" id="name" required><br><br>
+                    <input type="email" placeholder="Email" id="email" required><br><br>
+                    <input type="text" placeholder="Subject" id="subject" required><br><br>
+                    <textarea id="message" placeholder="Message" cols="30" rows="10"></textarea><br><br>
+                    <button id="btn">Send</button>
+                </form>
+            </div>
+        <center>
+            <h3 style="text-align: center; word-spacing: 30px;" class="back">
+                <a href="home.html" style="text-decoration: none; color: yellow;"> &les;--Back</a>
+            </h3> 
+        </center>
+        <hr class="boarder">
+        <br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    
+    <script>
+        var btn = document.getElementById('btn')
+        btn.addEventListener('click',function(e){
+            e.preventDefault()
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+            var body = 'name:' +name + '<br/> email:' + email + '<br/> subject' 
+            + subject + '<br/> message' + message;
+            Email.send({
+                SecureToken : "a76d7ead-d6d6-4d49-a686-ab54eabe25c7",
+                To : 'theacidica@gmail.com',
+                From : email,
+                Subject : subject,
+                Body : body
+            }).then(
+            message => alert(message)
+            );
+        })
+    </script>
 </html>
