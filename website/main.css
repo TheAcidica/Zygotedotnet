@@ -1,0 +1,67 @@
+.poler {
+    width: 128px;
+    height: 128px;
+}
+.news {
+    border: 1px solid red;
+    border-collapse: collapse;
+    background-color: red;
+    width: 1000px;
+    padding: 2px;
+}
+.links {
+    border-style: solid;
+    border-width: 1px;
+    border-color: yellow;
+    width: 330px;
+    height: 23px;
+    padding: 5px;
+}
+.about {
+    border: 2px solid red;
+    border-collapse: collapse;
+    width: 1000px;
+    padding: 5px;
+}
+.boarder {
+    border-style: solid;
+    background-color: red;
+    border-color: red;
+    width: 400px;
+    height: 1px;
+}
+body {
+    background-color: black;
+    color: white;
+    text-align:center
+}
+.back {
+    border-style: solid;
+    border-width: 1px;
+    border-color: yellow;
+    width: 100px;
+    height: 23px;
+    padding: 5px;
+}
+.polerad1{
+    width: 400px;
+    height: 200px;
+}
+.billboard_ad{
+    width: 970px;
+    height: 250px;
+}
+.fire{
+    width: 480px;
+    height: 120px;
+}
+.nav_boarder {
+    border-style: solid;
+    border-width: 4px;
+    border-left-width: 40px ;
+    border-right-width: 40px ;
+    border-color: rgb(0, 98, 218);
+    
+    width: 400px;
+    padding: 0px;    
+}
