@@ -1,0 +1,123 @@
+.poler {
+    width: 128px;
+    height: 128px;
+}
+.news {
+    margin: auto;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: dotted;
+    width: 970px;
+    padding: 5px;
+}
+.links {
+    margin: auto;
+    border-color: rgb(255, 255, 0);
+    border-width: 1px;
+    border-style: dotted;
+    width: 300px;
+    padding: 5px;
+}
+.about {
+    margin: auto;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    width: 970px;
+    border-style: dotted;
+    padding: 5px;
+}
+.allinks {
+    margin: auto;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    width: 750px;
+    border-style: dotted;
+    padding: 5px;
+}
+body {
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align:center 
+}
+.mainboarder {
+    margin: auto;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: dotted;
+    width: 1000px;
+    padding: 5px;
+}
+.boarder {
+
+    margin: auto;
+    border-color: rgb(255, 0, 0);
+    background-color: red;
+    border-style: solid;
+    height: 3px;
+    width: 400px;
+}
+.blog_page {
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: yellow;
+    width: 100px;
+    height: 23px;
+    padding: 5px;
+}
+.back {
+    margin: auto;
+    border-color: rgb(255, 255, 0);
+    border-width: 1px;
+    width: 80px;
+    border-style: dotted;
+    padding: 5px;
+}
+.polerad1{
+    width: 400px;
+    height: 200px;
+}
+.billboard_ad{
+    width: 970px;
+    height: 250px;
+}
+.fire{
+    width: 740px;
+    height: 160px;
+}
+.nav_boarder {
+    margin: auto;
+    border-style: solid;
+    border-width: 4px;
+    border-left-width: 20px ;
+    border-right-width: 20px ;
+    border-color: rgb(0, 98, 218);
+    width: 660px;
+    padding: 20px;    
+}
+.releases {
+    margin: auto;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    width: 700px;
+    border-style: dotted;
+    padding: 20px; 
+}
+.gallery {
+    text-align: left;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+iframe {
+    width: 640px;
+    height: 360px;
+}
+
+video {
+    width: 640px;
+    height: 360px;
+}
